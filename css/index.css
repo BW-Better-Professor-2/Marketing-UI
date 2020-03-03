@@ -103,15 +103,6 @@ nav,
 section {
   display: block;
 }
-section {
-  border: red 1px solid;
-}
-div {
-  border: lime 1px solid;
-}
-nav {
-  border: pink 1px solid;
-}
 * {
   box-sizing: border-box;
 }
@@ -119,7 +110,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  background-image: url(/Users/bobmurdoch/Desktop/git/project/img/ryan-jacobson-cXUOQWdRV4I-unsplash.jpg);
+  background-image: url(/Users/bobmurdoch/Desktop/git/Marketing-UI/img/ryan-jacobson-cXUOQWdRV4I-unsplash.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -336,6 +327,7 @@ footer img:hover {
   height: 35vh;
   display: flex;
   justify-content: space-evenly;
+  margin: 1% 0;
 }
 @media (max-width:1000px) {
   .about {
@@ -355,16 +347,27 @@ footer img:hover {
   padding: 2%;
   width: 25%;
   height: 100%;
+  border: 2px silver solid;
 }
 .about div h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+}
+@media (max-width:1000px) {
+  .about div h2 {
+    font-size: 1.9rem;
+  }
 }
 .about div h3 {
-  font-size: 2.2rem;
+  font-size: 2rem;
+}
+@media (max-width:1000px) {
+  .about div h3 {
+    font-size: 1.5rem;
+  }
 }
 .about div img {
   border-radius: 50%;
-  width: 70%;
+  width: 50%;
   height: auto;
   display: block;
   margin-left: auto;
@@ -372,14 +375,19 @@ footer img:hover {
 }
 @media (max-width:1000px) {
   .about div img {
+    width: 80%;
+  }
+}
+@media (max-width:500px) {
+  .about div img {
     width: 100%;
   }
 }
 .about div p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 @media (max-width:1000px) {
   .about div p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
