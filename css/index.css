@@ -1,0 +1,385 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+section {
+  border: red 1px solid;
+}
+div {
+  border: lime 1px solid;
+}
+nav {
+  border: pink 1px solid;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-image: url(/Users/bobmurdoch/Desktop/git/project/img/ryan-jacobson-cXUOQWdRV4I-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+header {
+  height: 8vh;
+  background: white;
+  display: flex;
+}
+header .logo {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width:1000px) {
+  header .logo {
+    width: 70%;
+    justify-content: flex-start;
+    padding-left: 2%;
+  }
+}
+header .logo img {
+  width: 8.5rem;
+  height: auto;
+}
+header .logo h2 {
+  font-size: 3rem;
+  color: #00bfff;
+}
+header .logo h3 {
+  font-size: 1.8rem;
+  color: black;
+}
+header .link {
+  width: 65%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 2%;
+}
+@media (max-width:1000px) {
+  header .link {
+    width: 30%;
+  }
+}
+header .link a {
+  font-size: 2.2rem;
+  text-decoration: none;
+  color: black;
+}
+header .link a:hover {
+  color: silver;
+}
+.navBar {
+  height: 5vh;
+  background-color: #00003c;
+  font-size: 1.7rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+.navBar div {
+  width: 100%;
+  height: auto;
+}
+.navBar div nav {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width:500px) {
+  .navBar div nav {
+    justify-content: space-evenly;
+  }
+}
+.navBar div nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0% 2%;
+}
+.navBar div nav a:hover {
+  color: silver;
+}
+footer {
+  height: 6vh;
+  background-color: #00003c;
+  display: flex;
+  justify-content: center;
+  padding: 0.3%;
+}
+@media (max-width:500px) {
+  footer {
+    height: 5vh;
+  }
+}
+footer img {
+  width: 4rem;
+  opacity: 0.3;
+  margin: 0 2%;
+}
+footer img:hover {
+  opacity: 1;
+}
+.background-container {
+  height: 50vh;
+}
+@media (max-width:1000px) {
+  .background-container {
+    height: 42vh;
+  }
+}
+@media (max-width:500px) {
+  .background-container {
+    height: 35vh;
+  }
+}
+.content-container {
+  height: 50vh;
+  background-color: white;
+  padding: 3%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.content-container .containers {
+  width: 45%;
+  height: auto;
+  padding: 2%;
+}
+@media (max-width:500px) {
+  .content-container .containers {
+    width: 100%;
+  }
+}
+.content-container .containers div {
+  height: 85%;
+}
+@media (max-width:500px) {
+  .content-container .containers div {
+    height: 70%;
+  }
+}
+.content-container .containers div h1 {
+  font-size: 3.3rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1%;
+}
+@media (max-width:1000px) {
+  .content-container .containers div h1 {
+    font-size: 2.7rem;
+  }
+}
+.content-container .containers div p {
+  height: 70%;
+  font-size: 2rem;
+}
+@media (max-width:1000px) {
+  .content-container .containers div p {
+    font-size: 1.5rem;
+  }
+}
+.content-container .containers .buttons {
+  display: flex;
+  justify-content: space-evenly;
+  height: 20%;
+}
+@media (max-width:500px) {
+  .content-container .containers .buttons {
+    flex-direction: column;
+    height: 30%;
+  }
+}
+.content-container .containers .buttons button {
+  background-color: #00bfff;
+  border: #00bfff 2px solid;
+  border-radius: 1rem;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 500;
+  width: 18rem;
+  height: 4vh;
+}
+@media (max-width:1000px) {
+  .content-container .containers .buttons button {
+    width: 13rem;
+    height: 3.5vh;
+  }
+}
+@media (max-width:500px) {
+  .content-container .containers .buttons button {
+    width: 100%;
+    height: 5vh;
+    font-size: 2rem;
+  }
+}
+.content-container .containers .buttons button:hover {
+  background-color: white;
+  color: #00bfff;
+}
+.content-container .images {
+  width: 45%;
+}
+@media (max-width:500px) {
+  .content-container .images {
+    display: none;
+  }
+}
+.content-container .images img {
+  height: 100%;
+  width: 100%;
+}
+.background {
+  background-image: none;
+}
+.about {
+  height: 35vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width:1000px) {
+  .about {
+    height: 30vh;
+  }
+}
+@media (max-width:500px) {
+  .about {
+    height: 28vh;
+  }
+}
+.about div {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 2%;
+  width: 25%;
+  height: 100%;
+}
+.about div h2 {
+  font-size: 2.5rem;
+}
+.about div h3 {
+  font-size: 2.2rem;
+}
+.about div img {
+  border-radius: 50%;
+  width: 70%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width:1000px) {
+  .about div img {
+    width: 100%;
+  }
+}
+.about div p {
+  font-size: 1.6rem;
+}
+@media (max-width:1000px) {
+  .about div p {
+    font-size: 1.4rem;
+  }
+}
