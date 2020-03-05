@@ -348,6 +348,16 @@ footer img:hover {
   height: 100%;
   border: 2px silver solid;
 }
+@media (max-width:1000px) {
+  .about div {
+    width: 30%;
+  }
+}
+@media (max-width:500px) {
+  .about div {
+    width: 35%;
+  }
+}
 .about div h2 {
   font-size: 3rem;
 }
@@ -383,10 +393,10 @@ footer img:hover {
   }
 }
 .about div p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 @media (max-width:1000px) {
   .about div p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
